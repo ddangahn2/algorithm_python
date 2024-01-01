@@ -34,7 +34,15 @@ def n_queen(queen_y_pos):
             queen_x_pos_list.append(queen_x_pos)
             n_queen(queen_y_pos + 1)
             queen_x_pos_list.pop()
-        
-n_queen(0)
+
+
+for i in range(N//2):
+    queen_x_pos_list = [i]
+    n_queen(1)
+
+count *= 2
+if N % 2 != 0:
+    queen_x_pos_list = [N//2]
+    n_queen(1)
 
 print(count)
