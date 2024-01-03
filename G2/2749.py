@@ -9,7 +9,6 @@
 n = int(input())
 
 pisano_period = 1500000
-
 n = n % pisano_period
 
 a = 0
@@ -26,3 +25,21 @@ else:
         a = b
         b = c
     print(c)
+
+
+# 주기를 모를 때
+# 아래로 주기를 구할 수 있다.
+# 아래는 0과 1이 다시 나오게 되는 주기를 구하는 식이고, 1,500,000 이 나온다.
+
+# cnt = 1
+
+# while True:
+#     c = (a + b) % 1000000
+#     a = b
+#     b = c % 1000000
+#     if b == 1 and a == 0:
+#         break
+#     else:
+#         cnt += 1
+
+# print(cnt)
