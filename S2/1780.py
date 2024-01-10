@@ -54,3 +54,47 @@ same_paper(0, 0, n)
 print(paper_minus)
 print(paper_zero)
 print(paper_plus)
+
+
+# 다른풀이. 아래 풀이가 시간이 더 적게 걸린다.
+
+# import sys
+
+# input = sys.stdin.readline
+
+# result = [0, 0, 0]
+
+
+# def tree(startX, startY, size):
+#     flag = arr[startY][startX]
+#     if size==1:
+#         result[flag + 1] += 1
+#         return
+
+#     for i in range(size):
+#         for j in range(size):
+#             if arr[startY + i][startX + j] != flag:
+#                 size //= 3
+#                 tree(startX, startY, size)
+#                 tree(startX + size, startY, size)
+#                 tree(startX + size*2, startY, size)
+
+#                 tree(startX, startY + size, size)
+#                 tree(startX, startY + size*2, size)
+
+#                 tree(startX+size, startY + size*2, size)
+#                 tree(startX+size*2, startY + size, size)
+
+#                 tree(startX + size, startY + size, size)
+#                 tree(startX + size*2, startY + size*2, size)
+#                 return
+#     result[flag + 1] += 1
+
+
+# N = int(input())
+# arr = [list(map(int, input().split())) for _ in range(N)]
+
+# tree(0,0,N)
+
+# for i in result:
+#     print(i)
