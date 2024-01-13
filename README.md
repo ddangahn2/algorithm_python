@@ -3,7 +3,7 @@
 |순번|문제난이도|문제번호|풀이|관련|생성일|비고|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |1|[G4](https://github.com/sangahnhan/algorithm_python/tree/main/G4)|[14466](https://www.acmicpc.net/problem/14466)|[풀이](https://github.com/sangahnhan/algorithm_python/blob/main/G4/14466.py)|[★직접 코테 광탈하면서 모은 문제들☆](https://www.acmicpc.net/workbook/view/4357)|2024/1/13||
-|2|[G3](https://github.com/sangahnhan/algorithm_python/tree/main/G3)|[11066](https://www.acmicpc.net/problem/11066)|[풀이](https://github.com/sangahnhan/algorithm_python/blob/main/G3/11066.py)|[단기간 성장](https://www.acmicpc.net/workbook/view/4349)|2024/1/12|시간초과|
+|2|[G3](https://github.com/sangahnhan/algorithm_python/tree/main/G3)|[11066](https://www.acmicpc.net/problem/11066)|[풀이](https://github.com/sangahnhan/algorithm_python/blob/main/G3/11066.py)|[단기간 성장](https://www.acmicpc.net/workbook/view/4349)|2024/1/12||
 |3|[P4](https://github.com/sangahnhan/algorithm_python/tree/main/P4)|[9376](https://www.acmicpc.net/problem/9376)|[풀이](https://github.com/sangahnhan/algorithm_python/blob/main/P4/9376.py)|[단기간 성장](https://www.acmicpc.net/workbook/view/4349)|2024/1/11|[해설](https://velog.io/@happy_sangahn/%EB%B0%B1%EC%A4%80-9376%EB%B2%88-%ED%83%88%EC%98%A5)|
 |4|[G5](https://github.com/sangahnhan/algorithm_python/tree/main/G5)|[13549](https://www.acmicpc.net/problem/13549)|[풀이](https://github.com/sangahnhan/algorithm_python/blob/main/G5/13549.py)|0-1 BFS|2024/1/10||
 |5|[S2](https://github.com/sangahnhan/algorithm_python/tree/main/S2)|[1780](https://www.acmicpc.net/problem/1780)|[풀이](https://github.com/sangahnhan/algorithm_python/blob/main/S2/1780.py)||2024/1/10||
