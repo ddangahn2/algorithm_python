@@ -74,7 +74,7 @@ other_problem = input()
 line_to_add = f"|1|[{difficulty}](https://github.com/sangahnhan/algorithm_python/tree/main/{difficulty})|[{problem_index}](https://www.acmicpc.net/problem/{problem_index})|[풀이](https://github.com/sangahnhan/algorithm_python/blob/main/{difficulty}/{problem_index}.py)|{description}|{added_year}/{added_month}/{added_day}|{other_problem}|"
 # add_last_line_to_readme(line_to_add)
 
-# add_first_line_to_readme(line_to_add)
+add_first_line_to_readme(line_to_add)
 
 # python 파일 난이도 파일로 옮기기
 # 파일 이름은 문제번호로 ex. 11044.py -> B2/11044.py
