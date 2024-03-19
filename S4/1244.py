@@ -29,7 +29,7 @@ for _ in range(N):
             left -= 1
             right += 1  
 
-for i in range(1, light_len+1):
+for i in range(light_len):
     print(light[i], end = " ")
-    if i % 20 == 0 :
+    if i % 20 == 19:
         print()
