@@ -8,7 +8,7 @@ input = sys.stdin.readline
 
 T = int(input())
 
-cube_face = {"U":[0,[(4, 2), (4, 1), (4, 0), (3, 2), (3, 1), (3, 0), (5, 2), (5, 1), (5, 0), (2, 2), (2, 1), (2, 0)]],"D":[1,[(4, 6), (4, 7), (4, 8),(2, 6), (2, 7), (2, 8), (5, 6), (5, 7), (5, 8), (3, 6), (3, 7), (3, 8)]],"F":[2,[(0, 6), (0, 7), (0, 8), (5, 0), (5, 3), (5, 6), (1, 6), (1, 7), (1, 8), (4, 8), (4, 5), (4, 2)]],"B":[3,[(0, 2), (0, 1), (0, 0), (4, 0), (4, 3), (4, 6), (1, 2), (1, 1), (1, 0), (5, 8), (5, 5), (5, 2)]],"L":[4,[(0, 0), (0, 3), (0, 6), (2, 0), (2, 3), (2, 6), (1, 8), (1, 5), (1, 2), (3, 8), (3, 5), (3, 2)]],"R":[5,[(0, 8), (0, 5), (0, 2), (3, 0), (3, 3), (3, 6), (1, 0), (1, 3), (1, 6), (2, 8), (2, 5), (2, 2)]]}
+cube_face = {"U":[0,[(4, 2), (4, 1), (4, 0), (3, 2), (3, 1), (3, 0), (5, 2), (5, 1), (5, 0), (2, 2), (2, 1), (2, 0)]],"D":[1,[(4, 6), (4, 7), (4, 8),(2, 6), (2, 7), (2, 8), (5, 6), (5, 7), (5, 8), (3, 6), (3, 7), (3, 8)]],"F":[2,[(0, 6), (0, 7), (0, 8), (5, 0), (5, 3), (5, 6), (1, 2), (1, 1), (1, 0), (4, 8), (4, 5), (4, 2)]],"B":[3,[(0, 2), (0, 1), (0, 0), (4, 0), (4, 3), (4, 6), (1, 6), (1, 7), (1, 8), (5, 8), (5, 5), (5, 2)]],"L":[4,[(0, 0), (0, 3), (0, 6), (2, 0), (2, 3), (2, 6), (1, 0), (1, 3), (1, 6), (3, 8), (3, 5), (3, 2)]],"R":[5,[(0, 8), (0, 5), (0, 2), (3, 0), (3, 3), (3, 6), (1, 8), (1, 5), (1, 2), (2, 8), (2, 5), (2, 2)]]}
 def move(face, clockwise):
     rot1, rot2 = cube_face[face]
     if clockwise == False:
@@ -18,11 +18,10 @@ def move(face, clockwise):
 
 def rot_face(face_num, clockwise):
     global cube
-    f = cube[face_num]
     if clockwise:
-        f[0], f[1], f[2], f[3], f[5], f[6], f[7], f[8] = f[6], f[3], f[0], f[7], f[1], f[8], f[5], f[2]
+        cube[face_num][0], cube[face_num][1], cube[face_num][2], cube[face_num][3], cube[face_num][5], cube[face_num][6], cube[face_num][7], cube[face_num][8] = cube[face_num][6], cube[face_num][3], cube[face_num][0], cube[face_num][7], cube[face_num][1], cube[face_num][8], cube[face_num][5], cube[face_num][2]
     else:
-        f[0], f[1], f[2], f[3], f[5], f[6], f[7], f[8] = f[2], f[5], f[8], f[1], f[7], f[0], f[3], f[6]
+        cube[face_num][0], cube[face_num][1], cube[face_num][2], cube[face_num][3], cube[face_num][5], cube[face_num][6], cube[face_num][7], cube[face_num][8] = cube[face_num][2], cube[face_num][5], cube[face_num][8], cube[face_num][1], cube[face_num][7], cube[face_num][0], cube[face_num][3], cube[face_num][6]
 
 def rot_body(rot_face_list):
     global cube
