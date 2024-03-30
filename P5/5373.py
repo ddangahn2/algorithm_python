@@ -1,4 +1,4 @@
-# P5 solving
+# P5 solved
 # [삼성 SW 역량 테스트 기출 문제](https://www.acmicpc.net/workbook/view/1152)
 
 # 윗면 흰색, 아래 노란, 앞 빨간, 뒤 오렌지, 왼 초, 오른 파
@@ -38,7 +38,7 @@ cube_face = {"U":[0,[(4, 2), (4, 1), (4, 0), (3, 6), (3, 7), (3, 8), (5, 2), (5,
 def move(face, clockwise):
     rot1, rot2 = cube_face[face]
     if clockwise == False:
-        rot2.reverse()
+        rot2 = list(reversed(rot2))
     rot_face(rot1, clockwise)
     rot_body(rot2)
 
@@ -88,4 +88,3 @@ for _ in range(T):
         else:
             move(t[0], False)
     print_board()
-    
